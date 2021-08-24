@@ -1,0 +1,14 @@
+'''HackerEarth solution for 
+
+from collections import Counter
+N = int(input())
+l = list(map(int,input().split()))
+d = dict(Counter(l).items())
+su = 0
+cust = int(input())
+for i in range(0,cust):
+    key,value = map(int,input().split())
+    if key in d.keys() and d[key] - 1 >= 0 :
+        d[key] = d[key] - 1 
+        su = su + value
+print(su)
