@@ -1,4 +1,4 @@
-'''HackerEarth solution for 
+'''HackerEarth solution for Collection.counter() problem '''
 
 from collections import Counter
 N = int(input())
